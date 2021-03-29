@@ -1,11 +1,7 @@
+/* ============ PRICE ITEM ============*/
 .price-item {
-}
-
-.price-item::after {
-    content: " ";
-    height: 20px;
-    width: 255px;
-    background-color: #000;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .price-item > div {
@@ -13,4 +9,31 @@
     width: 209px;
     margin: 0 auto;
     background-color: #C4C4C4;
+}
+
+.price-item > div > div {
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 360px;
+    top: calc((100% - 2px) / 2);
+    left: calc((100% - 360px) / 2);
+    transform: rotate(-50deg);
+    background-color: #000;
+}
+
+.price-item > div > p {
+    font-size: 1.5rem;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 12px;
+    position: relative;
+}
+
+.price-item > div > p + p {
+    text-align: right;
+    vertical-align: bottom;
+    top: calc(100% - 60px);
+    transform: translateY(-100%);
 }
