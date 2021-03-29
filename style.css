@@ -1,0 +1,16 @@
+.price-item {
+}
+
+.price-item::after {
+    content: " ";
+    height: 20px;
+    width: 255px;
+    background-color: #000;
+}
+
+.price-item > div {
+    height: 244px;
+    width: 209px;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+}
