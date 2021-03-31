@@ -16,35 +16,174 @@
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
             crossorigin="anonymous"></script>
 
+    <!--  ПОДКАЧИВАЕМ ШРИФТ  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
     <!--  ПОДКЛЮЧАЕМ СТИЛИ  -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+<nav class="navbar navbar-expand-md navbar-light bg-faded sticky-top">
+    <div class="navbar-nav mx-auto" id="navbarSupportedContent">
+        <ul class="nav justify-content-center">
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#about"><h4>О нас</h4></a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#programs"><h4>Программы</h4></a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#teachers"><h4>Педагоги</h4></a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#prices"><h4>Цены</h4></a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#gallery"><h4>Фото</h4></a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#contacts"><h4>Контакты</h4></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+
+    <!-- ===================== о нас ===================== -->
+    <div id="about" class="row g-5 py-5 background-purple text">
+        Сириус - это многопрофильная школа обучения для детей различных возрастов. Мы находим индивидуальный подход для
+        каждого ученика, где каждый может составить курс программы необходимый только ему!
+    </div>
+
+    <h3 class="text-center text">Сириус в цифрах</h3>
+
+    <div class="row row-cols-1 row-cols-md-2 mb-2 text about-us">
+        <div class="col">>250 работников</div>
+        <div class="col">>35 филиалов</div>
+        <div class="col">>15 городов</div>
+        <div class="col">>12500 учеников</div>
+        <div class="col">>20 программ обучения</div>
+        <div class="col">>20 программ обучения</div>
+    </div>
+
+    <!-- ===================== программы обучения ===================== -->
+
+    <div id="programs" class="programs background-purple">
+        <h3 class="text-center text">Программы :</h3>
+        <div class="row row-cols-4 mb-4 justify-content-md-center">
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+            <div class="col-12 col-md-3 programs-item"><div></div></div>
+        </div>
+    </div>
+
+    <!-- ===================== цены ===================== -->
+    <h3 class="text-center text">Цены:</h3>
+    <div id="prices" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col price-item">
             <div>
                 <div></div>
-                <p>sdfsdf</p>
-                <p>sdfsdfsdfsdf<br>sdfsdfsdfsdf</p>
+                <p>пробное<br>занятие</p>
+                <p><b>300</b>р.</p>
             </div>
         </div>
         <div class="col price-item">
             <div>
                 <div></div>
-                <p>sdfsdf</p>
-                <p>sdfsdfsdfsdf</p>
+                <p>месяц<br>занятий</p>
+                <p><b>1200</b>р.</p>
             </div>
         </div>
         <div class="col price-item">
             <div>
                 <div></div>
-                <p>sdfsdf</p>
-                <p>sdfsdfsdfsdf</p>
+                <p>семестр<br><b>3</b>месяца</p>
+                <p><b>350</b>р.</p>
             </div>
         </div>
     </div>
+
+    <!-- ===================== педагоги ===================== -->
+    <div id="teachers">
+        <h3 class="text-center text">Преподаватели:</h3>
+        <div class="row background-purple text">
+            <div class="col-md-4 col-12 teacher-pic"></div>
+            <div class="col-md-8 col-12 teacher-text">Конашева Ирина<br><br>Педагог со стажем <b>3</b> лет по литературе</div>
+        </div>
+        <div class="row background-purple text">
+            <div class="col-md-8 col-12 teacher-text">Конашева Ирина<br><br>Педагог со стажем <b>3</b> лет по литературе</div>
+            <div class="col-md-4 col-12 teacher-pic"></div>
+        </div>
+        <div class="row background-purple text">
+            <div class="col-md-4 col-12 teacher-pic"></div>
+            <div class="col-md-8 col-12 teacher-text">Конашева Ирина<br><br>Педагог со стажем <b>3</b> лет по литературе</div>
+        </div>
+    </div>
+
+    <!-- ===================== фото ===================== -->
+    <h3 class="text-center text">Галерея:</h3>
+    <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://static.dw.com/image/17083711_303.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://news.liga.net/images/general/2019/09/11/20190911155211-5324.jpg?v=1568211567" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.interfax.ru/ftproot/photos/photostory/2019/07/09/week4_700.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ===================== контакты ===================== -->
+    <h3 class="text-center text">Контакты:</h3>
+    <div id="contacts" class="row">
+        <div class="contact-map col-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.3019579932884!2d61.368011216028876!3d55.16049304498388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c592c767543e7d%3A0x422f616055954509!2z0K7Qo9GA0JPQow!5e0!3m2!1sru!2sru!4v1617233923931!5m2!1sru!2sru"
+                    width="100%"
+                    height="100%"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <div class="background-purple contact-city col-5 text">
+            Выберите город:
+            <br><br>
+            Адрес:
+            <br><br>
+            Номер телефона
+            <br><br>
+            Соц сети...
+        </div>
+    </div>
+
+    <!-- ===================== футер ===================== -->
+    <div class="footer">
+        <svg width="121" height="63" viewBox="0 0 121 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.5625 36.4795H44.0781V14.0732H48.5625V36.4795ZM57.2188 18.5576V27.5264H61.7031C62.3177 27.5264 62.8958 27.4118 63.4375 27.1826C63.9792 26.943 64.4531 26.6201 64.8594 26.2139C65.2656 25.8076 65.5833 25.3337 65.8125 24.792C66.0521 24.2399 66.1719 23.6566 66.1719 23.042C66.1719 22.4274 66.0521 21.8493 65.8125 21.3076C65.5833 20.7555 65.2656 20.2764 64.8594 19.8701C64.4531 19.4639 63.9792 19.1462 63.4375 18.917C62.8958 18.6774 62.3177 18.5576 61.7031 18.5576H57.2188ZM57.2188 36.4795H52.7344V14.0732H61.7031C62.526 14.0732 63.3177 14.1826 64.0781 14.4014C64.8385 14.6097 65.5469 14.9118 66.2031 15.3076C66.8698 15.693 67.474 16.1618 68.0156 16.7139C68.5677 17.2555 69.0365 17.8597 69.4219 18.5264C69.8177 19.193 70.1198 19.9066 70.3281 20.667C70.5469 21.4274 70.6562 22.2191 70.6562 23.042C70.6562 23.8128 70.5573 24.5628 70.3594 25.292C70.1719 26.0212 69.8958 26.7139 69.5312 27.3701C69.1771 28.0264 68.7396 28.6305 68.2188 29.1826C67.6979 29.7347 67.1146 30.2139 66.4688 30.6201L68.9531 36.4795H64.1875L62.2344 31.9639L57.2188 31.9951V36.4795ZM78.0938 36.4795H73.6094V14.0732H78.0938V36.4795ZM99.9375 27.5264C99.9375 28.766 99.7031 29.9326 99.2344 31.0264C98.7656 32.1097 98.125 33.0576 97.3125 33.8701C96.5 34.6722 95.5469 35.3076 94.4531 35.7764C93.3698 36.2451 92.2083 36.4795 90.9688 36.4795C89.7292 36.4795 88.5625 36.2451 87.4688 35.7764C86.3854 35.3076 85.4375 34.6722 84.625 33.8701C83.8229 33.0576 83.1875 32.1097 82.7188 31.0264C82.25 29.9326 82.0156 28.766 82.0156 27.5264V14.0732H86.4844V27.5264C86.4844 28.141 86.599 28.7191 86.8281 29.2607C87.0677 29.8024 87.3906 30.2764 87.7969 30.6826C88.2031 31.0889 88.6771 31.4118 89.2188 31.6514C89.7708 31.8805 90.3542 31.9951 90.9688 31.9951C91.5833 31.9951 92.1615 31.8805 92.7031 31.6514C93.2552 31.4118 93.7344 31.0889 94.1406 30.6826C94.5469 30.2764 94.8646 29.8024 95.0938 29.2607C95.3333 28.7191 95.4531 28.141 95.4531 27.5264V14.0732H99.9375V27.5264ZM102.516 20.792C102.516 19.8649 102.693 18.9951 103.047 18.1826C103.401 17.3701 103.88 16.6618 104.484 16.0576C105.099 15.443 105.812 14.9587 106.625 14.6045C107.438 14.2503 108.307 14.0732 109.234 14.0732H119.516V18.5576H109.234C108.922 18.5576 108.63 18.6149 108.359 18.7295C108.089 18.8441 107.849 19.0055 107.641 19.2139C107.443 19.4118 107.286 19.6462 107.172 19.917C107.057 20.1878 107 20.4795 107 20.792C107 21.1045 107.057 21.4014 107.172 21.6826C107.286 21.9535 107.443 22.193 107.641 22.4014C107.849 22.5993 108.089 22.7555 108.359 22.8701C108.63 22.9847 108.922 23.042 109.234 23.042H113.719C114.646 23.042 115.516 23.2191 116.328 23.5732C117.151 23.917 117.865 24.3962 118.469 25.0107C119.083 25.6149 119.562 26.3285 119.906 27.1514C120.26 27.9639 120.438 28.8337 120.438 29.7607C120.438 30.6878 120.26 31.5576 119.906 32.3701C119.562 33.1826 119.083 33.8962 118.469 34.5107C117.865 35.1149 117.151 35.5941 116.328 35.9482C115.516 36.3024 114.646 36.4795 113.719 36.4795H103.766V31.9951H113.719C114.031 31.9951 114.323 31.9378 114.594 31.8232C114.865 31.7087 115.099 31.5524 115.297 31.3545C115.505 31.1462 115.667 30.9066 115.781 30.6357C115.896 30.3649 115.953 30.0732 115.953 29.7607C115.953 29.4482 115.896 29.1566 115.781 28.8857C115.667 28.6149 115.505 28.3805 115.297 28.1826C115.099 27.9743 114.865 27.8128 114.594 27.6982C114.323 27.5837 114.031 27.5264 113.719 27.5264H109.234C108.307 27.5264 107.438 27.3493 106.625 26.9951C105.812 26.641 105.099 26.1618 104.484 25.5576C103.88 24.943 103.401 24.2295 103.047 23.417C102.693 22.5941 102.516 21.7191 102.516 20.792Z" fill="#000E8E"/>
+            <path d="M24.3101 34.0677L29.6838 29.896L34.0291 26.3628L35.3842 24.9541L35.9263 24.1955L36.1973 23.4369L36.369 22.8522L36.369 22.3104L36.1973 21.6602L36.0077 21.2267L35.7367 20.7933L35.3842 20.4026L34.6726 20.1506L33.9498 20.1506L32.8658 20.584L31.2396 21.3351L28.8707 22.6355L26.9032 23.6183L26.3612 23.8275L25.1699 24.1955L24.0123 24.3769L23.2896 24.3769L22.5669 24.3769L21.7538 24.1955L21.011 23.8275L20.3083 23.2932L19.7552 22.6355L19.4953 21.9928L19.3849 21.3351L19.3849 19.5357L19.7552 17.8018L21.011 15.7L24.3101 13.1253L28.8707 10.2817L35.3842 6.48889L46.1259 0.0952797L41.4282 4.10484L36.5497 8.1144L31.8609 12.124L27.1542 15.7L24.5811 17.6935L24.3101 18.0841L24.173 18.5176L24.3101 18.7771L24.5811 18.9939L24.8254 19.0669L25.1699 18.9939L25.6385 18.7418L27.9673 17.6935L30.4065 16.567L31.9016 16.0251L32.5947 15.7075L33.3967 15.4833L34.2209 15.3825L35.0318 15.4833L35.6663 15.5992L36.2084 15.7075L36.7504 15.9243L37.3828 16.2494L37.8345 16.4661L38.4669 16.8996L39.009 17.333L39.4496 17.759L39.7317 18.3083L39.9916 18.7771L40.2626 19.5357L40.5337 20.4026L40.7177 21.415L40.8861 22.8951L40.8861 24.0442L40.7177 24.8028L40.4433 25.6042L40.1723 26.2544L39.8109 27.013L39.4496 27.6204L37.9952 29.896L35.9263 32.2801L30.4683 37.7307L23.9109 44.2004L18.0497 43.5773L18.8809 37.921L24.3101 34.0677Z" fill="#000E8E"/>
+            <path d="M13.9423 39.7999L14.8858 45.5722L15.072 46.7108L16.1204 46.9377L21.3977 48.0795L16.665 50.6544L15.7941 51.1283L15.9713 52.2128L16.9385 58.1297L13.1809 53.8595L12.4017 52.974L11.459 53.487L6.91282 55.9605L9.18195 50.7438L9.59784 49.7877L8.87795 48.9696L4.96624 44.5243L10.2435 45.6661L11.292 45.8929L11.7286 44.8891L13.9423 39.7999Z" fill="white" stroke="#000E8E" stroke-width="3"/>
+        </svg>
+    </div>
+
 </div>
 </body>
 </html>
